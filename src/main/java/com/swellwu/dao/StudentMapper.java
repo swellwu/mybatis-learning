@@ -15,6 +15,9 @@ public interface StudentMapper {
 
     int insert(Student record);
 
+    //批量插入
+    int insertList(List<Student> list);
+
     int insertSelective(Student record);
 
     List<Student> selectByExample(StudentExample example);
